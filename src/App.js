@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import './App.css';
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Redirect} from "react-router-dom";
+import FetchUsers from './components/FetchUsers'
 
 class App extends Component {
   
@@ -8,9 +9,9 @@ class App extends Component {
    return ( 
     <div className="container">   
       <header></header>  
-      <Router>
-        <Route exact path='/' component={Home} />
-        <Route  path='/fetch' render={(props)=><FetchUsers {...props} />}/>      
+       <Router>
+        <Route exact path='/' render={(props)=><Redirect to='/users' />} />
+        <Route  path='/users' render={(props)=><FetchUsers {...props} />}/>      
       </Router> 
       <footer></footer>
     </div>
