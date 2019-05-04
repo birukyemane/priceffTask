@@ -1,15 +1,14 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-const User = ({ name, gender }) => (
+const User = ({ user }) => (
   <p>
-    <i>{name}</i>: {gender}
+    {user.name.title} {user.name.first} {user.name.last} {user.gender} 
   </p>
 )
 
 User.propTypes = {
-  name: PropTypes.string.isRequired,
-  gender: PropTypes.string.isRequired
+  user: PropTypes.object.isRequired,
 }
 
 export default User;

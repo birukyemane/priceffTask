@@ -10,13 +10,9 @@ export const populateUsersList = users => ({
     users
 })
 
-export const setStat = (averageAge,oldestPerson, youngestPerson, northernMostPreson, southernMostPerson)=> ({
+export const setStat = (stat)=> ({
     type: types.SET_STAT,
-    averageAge,
-    oldestPerson,
-    youngestPerson,
-    northernMostPreson,
-    southernMostPerson
+    stat
 })
 
 export const addStat = (averageAge,oldestPerson, youngestPerson, northernMostPreson, southernMostPerson) => ({

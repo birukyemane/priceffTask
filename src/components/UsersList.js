@@ -5,12 +5,12 @@ import User from "./User"
 const UserList = ({ users }) => (
   <section id="messages-list">
     <ul>
-    {users.map(message => (
-      <User
-      key={message.id}
-      {...message}
-      />
-    ))}
+      {users.map((user,index) => (
+        <User
+        key={index + 1}
+        user={user}
+        />
+      ))}
     </ul>
   </section>
 )
@@ -18,10 +18,14 @@ const UserList = ({ users }) => (
 UserList.propTypes = {
     users: PropTypes.arrayOf(
       PropTypes.shape({
-        name: PropTypes.string.isRequired,
+        name: PropTypes.shape({
+          first:PropTypes.string.isRequired,
+          title: PropTypes.string.isRequired,
+          last: PropTypes.string.isRequired
+        }).isRequired,
         gender: PropTypes.string.isRequired
       }).isRequired
     ).isRequired
   }
   
-  export default UserList;
+export default UserList;
