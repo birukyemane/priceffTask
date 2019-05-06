@@ -4,12 +4,12 @@ export const averageAge = (data)=>{
     return Math.round(sum/data.length);
 }
 
-export const oldestAge = (data)=>{
+export const oldestPerson = (data)=>{
     const reducer = (accumulator, currentValue) => (accumulator.dob.age < Number(currentValue.dob.age)? currentValue:accumulator);
     return data.reduce(reducer);
 }
 
-export const youngestAge = (data)=>{
+export const youngestPerson = (data)=>{
     const reducer = (accumulator, currentValue) => (accumulator.dob.age > Number(currentValue.dob.age)? currentValue:accumulator);
     return data.reduce(reducer);
 }

@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import axios from 'axios';
 import { UsersList } from '../containers/UsersList';
-import {averageAge, oldestAge, youngestAge, northernMostPerson, southernMostPerson} from '../utilities/statistics';
+import { Stat } from '../containers/Stat';
+import {averageAge, oldestPerson, youngestPerson, northernMostPerson, southernMostPerson} from '../utilities/statistics';
 
 class FetchUsers extends Component {
     fetch = () => {
@@ -14,8 +15,8 @@ class FetchUsers extends Component {
             dispatchUsers(users);
             dispatchStat({
                 averageAge: averageAge(users), 
-                oldestAge: oldestAge(users), 
-                youngestAge: youngestAge(users),
+                oldestPerson: oldestPerson(users), 
+                youngestPerson: youngestPerson(users),
                 northernMostPerson: northernMostPerson(users),
                 southernMostPerson:southernMostPerson(users)
             });
@@ -30,6 +31,7 @@ class FetchUsers extends Component {
         return (
             <div>
                 <button type="button" onClick= {this.fetch}> Fetch users </button>
+                <Stat />
                 <UsersList />
             </div>            
         );    
