@@ -1,2 +1,5 @@
 ## PriceffTask
 
+# features 
+# Technolgies
+# Usage 
