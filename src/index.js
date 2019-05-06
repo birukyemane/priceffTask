@@ -7,8 +7,8 @@ import { createStore } from 'redux';
 import usersStat from './reducers';
 
 const store = createStore(usersStat);
-store.subscribe(()=>{
-  console.log('store changed',store.getState())
+store.subscribe(()=>{ // for testing redux
+  console.log('store changed to',store.getState())
 })
 
 ReactDOM.render(
