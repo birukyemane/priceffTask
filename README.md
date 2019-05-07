@@ -1,7 +1,7 @@
 
 ## PriceffTask
 
-[check it live!]d27yzh58rnzo20.cloudfront.net)
+[check it live!](d27yzh58rnzo20.cloudfront.net)
 
 # features 
 
