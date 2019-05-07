@@ -1,5 +1,13 @@
+
 ## PriceffTask
 
+[check it live!](http://d27yzh58rnzo20.cloudfront.net/users)
+
 # features 
+
+    * fetch random users data and calculate statistics
+    * save the statistics data to a data base 
 # Technolgies
-# Usage 
+* React/Redux 
+* Serverless API using AWS API Gateway Lamabda and DynamoDB services
+* The React app is  served globally through AWS CloudFront
