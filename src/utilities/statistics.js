@@ -6,20 +6,24 @@ export const averageAge = (data)=>{
 
 export const oldestPerson = (data)=>{
     const reducer = (accumulator, currentValue) => (accumulator.dob.age < Number(currentValue.dob.age)? currentValue:accumulator);
-    return data.reduce(reducer);
+    const {name,dob} = data.reduce(reducer);
+    return {name,dob} ;
 }
 
 export const youngestPerson = (data)=>{
     const reducer = (accumulator, currentValue) => (accumulator.dob.age > Number(currentValue.dob.age)? currentValue:accumulator);
-    return data.reduce(reducer);
+    const {name,dob} = data.reduce(reducer);
+    return {name,dob} ;
 }
 
 export const northernMostPerson = (data)=>{
     const reducer = (accumulator, currentValue) => (accumulator.location.coordinates.latitude < Number(currentValue.location.coordinates.latitude)? currentValue:accumulator);
-    return data.reduce(reducer);
+    const {name,location} = data.reduce(reducer);
+    return {name,location} ;
 }
 
 export const southernMostPerson = (data)=>{
     const reducer = (accumulator, currentValue) => (accumulator.location.coordinates.latitude > Number(currentValue.location.coordinates.latitude)? currentValue:accumulator);
-    return data.reduce(reducer);
+    const {name,location} = data.reduce(reducer);
+    return {name,location} ;
 }
