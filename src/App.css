@@ -72,8 +72,24 @@ a:link {
     cursor: pointer;
 }
 
-.saveButton {   
+.button-secondary {   
     border: 1px solid rgb(256,0,80);
     color: rgb(256,0,80); 
 }
+
+.users-title {
+    width: 19%;
+    font-weight: bold;
+    font-size: 17px;
+    border-bottom: 1px  black solid;
+}
+
+.users-info {
+    font-weight: normal;
+    font-style: italic;
+    border-bottom: none;
+}
+
+
+
   

@@ -49,7 +49,7 @@ const Stat = ({ stat, dispatchAddStat }) => {
               <div className="stat-info"> {southernMostPerson.name.title} {southernMostPerson.name.first} {southernMostPerson.name.last}</div>
             </div>                     
     </div>            
-    <div><button className="button-primary  saveButton margin" onClick={e=>handleSave(stat,dispatchAddStat)}>Save</button></div>
+    <div><button className="button-primary  button-secondary margin" onClick={e=>handleSave(stat,dispatchAddStat)}>Save</button></div>
     </div>
    )
   }else {
