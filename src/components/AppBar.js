@@ -2,11 +2,13 @@ import React from "react"
 import { NavLink } from 'react-router-dom';
 
 const AppBar = () => (
-  <header className="flex-row full-width primary--background">
-    <ul>
-        <li className="inline margin"><NavLink className="white-text" to='/users' >Random users</NavLink></li>            
-        <li className="inline margin"><NavLink className="white-text" to='/stats' >Saved stats</NavLink></li>
-    </ul>
+  <header className="app-bar full-width primary--background">
+   
+      <ul>
+          <li className="inline margin"><NavLink className="white-text" to='/users' >Fetch Users</NavLink></li>            
+          <li className="inline margin"><NavLink className="white-text" to='/stats' >Saved Stats</NavLink></li>
+      </ul>
+   
   </header>
 )
 

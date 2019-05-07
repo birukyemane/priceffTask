@@ -2,15 +2,40 @@
     box-sizing: border-box;    
 }
 
+body {
+    background: #eee;
+}
 .flex-column {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    background: white;
 }
 
 .flex-row {
     display: flex;
-    justify-content: flex-start    
+    justify-content: flex-start;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 5px 0;
+}
+
+.stat-title {
+    width: 15%;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.stat-info {
+    font-style: italic;
+    font-size: 17px;
+    margin: 0 10px;
+}
+
+.app-bar {
+    display: flex;
+    justify-content: space-between; 
+    font-size: 17px;
 }
 
 .margin {
@@ -35,5 +60,20 @@ a:link {
 
 .inline {
     display: inline;
+}
+
+.button-primary {
+    font-size: 14px;
+    padding: 8px 15px;
+    border: 1px solid #6200EE;
+    color: #6200EE;
+    background-color: #eee;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.saveButton {   
+    border: 1px solid rgb(256,0,80);
+    color: rgb(256,0,80); 
 }
   

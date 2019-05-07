@@ -30,7 +30,7 @@ class FetchUsers extends Component {
     render () {
         return (
             <div>
-                <button type="button" onClick= {this.fetch}> Fetch users </button>
+                <button className="button-primary  margin " type="button" onClick= {this.fetch}> FETCH USERS </button>
                 <Stat />
                 <UsersList />
             </div>            

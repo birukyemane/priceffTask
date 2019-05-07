@@ -22,7 +22,7 @@ class App extends Component {
 
   render () {
    return ( 
-    <div className="flex-column">        
+    <div>        
        <Router>
         <AppBar /> 
         <Route exact path='/' render={(props)=><Redirect to='/users' />} />
