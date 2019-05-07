@@ -8,7 +8,7 @@ class FetchUsers extends Component {
     fetch = () => {
         const dispatchUsers = this.props.dispatchUsers;
         const dispatchStat = this.props.dispatchStat;
-        axios.get('https://randomuser.me/api/?results=10')
+        axios.get('https://randomuser.me/api/?results=500')
         .then(function (response) {
             // handle success
             let users = response.data.results
