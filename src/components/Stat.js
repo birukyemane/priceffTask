@@ -2,22 +2,23 @@ import React from "react";
 import PropTypes from "prop-types";
 import { API } from "aws-amplify";
 
-const handleSave = async stat => {
+const handleSave = async (stat, dispatchAddStat) => {
   try {
-    await createNote(JSON.stringify(stat));
+   let result = await createStat(JSON.stringify(stat));
+   dispatchAddStat(result);
   } catch (e) {
     alert(e);
   }
 }
 
-const createNote = (note)=> {
+const createStat = (note)=> {
   return API.post("priceffTask", "/createstat", {
     body: note
   });
 }
 
 
-const Stat = ({ stat }) => {
+const Stat = ({ stat, dispatchAddStat }) => {
   if(Object.keys(stat).length!==0){
     const {averageAge, oldestPerson, youngestPerson, northernMostPerson ,southernMostPerson} = stat;
     return (
@@ -25,7 +26,7 @@ const Stat = ({ stat }) => {
          <p>
     {averageAge} {oldestPerson.name.first} {youngestPerson.name.first} {northernMostPerson.name.first} {southernMostPerson.name.first}
      </p>
-     <button onClick={e=>handleSave(stat)}>Save</button>
+     <button onClick={e=>handleSave(stat,dispatchAddStat)}>Save</button>
     </div>
    )
   }else {
