@@ -4,7 +4,7 @@ import StatItem from "./StatItem"
 
 const StatsList = ({ statsHistory }) => {
   let header =  <div className="flex-column" >
-  <div className="margin">{`${statsHistory.length} saved statistics data are found`}</div>   
+  <div className="margin success">{`${statsHistory.length} saved statistics data are found`}</div>   
 </div>;
 header = (statsHistory.length>0 ? header:'');
 statsHistory = statsHistory.map((statHistory,index) => <StatItem key={index + 1}  statHistory={statHistory}/>);

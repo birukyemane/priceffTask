@@ -18,7 +18,8 @@ class FetchUsers extends Component {
                 oldestPerson: oldestPerson(users), 
                 youngestPerson: youngestPerson(users),
                 northernMostPerson: northernMostPerson(users),
-                southernMostPerson:southernMostPerson(users)
+                southernMostPerson:southernMostPerson(users),
+                isSaved: false
             });
         })
         .catch(function (error) {
@@ -31,7 +32,7 @@ class FetchUsers extends Component {
         return (
             <div>
                 <button className="button-primary  margin " type="button" onClick= {this.fetch}> FETCH USERS </button>
-                <Stat />
+                <Stat history={this.props.history}/>
                 <UsersList />
             </div>            
         );    

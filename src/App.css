@@ -90,6 +90,6 @@ a:link {
     border-bottom: none;
 }
 
-
-
-  
+.success {
+    color: green;
+}

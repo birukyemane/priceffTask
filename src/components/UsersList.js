@@ -4,7 +4,7 @@ import User from "./User"
 
 const UserList = ({ users }) => {
     let header =  <div className="flex-column">
-      <div className="margin">{`${users.length} users fetched`}</div>
+      <div className="margin success">{`${users.length} users fetched`}</div>
        <div className="flex-row margin">
         <div className="users-title">Name</div>
         <div className="users-title">Age</div>

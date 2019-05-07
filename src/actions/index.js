@@ -14,15 +14,6 @@ export const setStat = (stat)=> ({
     type: types.SET_STAT,
     stat
 })
-/*
-export const addStat = (averageAge,oldestPerson, youngestPerson, northernMostPreson, southernMostPerson) => ({
-    type: types.ADD_STAT,
-    averageAge,
-    oldestPerson,
-    youngestPerson,
-    northernMostPreson,
-    southernMostPerson
-})*/
 
 export const addStat = (stat) => ({
     type: types.ADD_STAT,
