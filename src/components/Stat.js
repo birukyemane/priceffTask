@@ -3,9 +3,7 @@ import PropTypes from "prop-types";
 import { API } from "aws-amplify";
 
 const handleSave = async stat => {
-  console.log('hadle save',stat)
   try {
-    //{"PickupLocation":{"Latitude":47.6174755835663,"Longitude":-122.28837066650185}}
     await createNote(JSON.stringify(stat));
   } catch (e) {
     alert(e);
