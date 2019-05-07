@@ -31,7 +31,7 @@ class FetchUsers extends Component {
     render () {
         return (
             <div>
-                <button className="button-primary  margin " type="button" onClick= {this.fetch}> FETCH USERS </button>
+                <button className="button-primary  margin " type="button" onClick= {this.fetch}> Calculate </button>
                 <Stat history={this.props.history}/>
                 <UsersList />
             </div>            

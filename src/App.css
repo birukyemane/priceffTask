@@ -4,7 +4,9 @@
 
 body {
     background: #eee;
+    font-family: 'Roboto';
 }
+
 .flex-column {
     display: flex;
     flex-direction: column;
@@ -21,12 +23,13 @@ body {
 }
 
 .stat-title {
-    width: 15%;
+    width: 20%;
     font-weight: bold;
     font-size: 17px;
 }
 
 .stat-info {
+    width: 15%;
     font-style: italic;
     font-size: 17px;
     margin: 0 10px;
@@ -48,6 +51,15 @@ body {
 
 a:link {
    text-decoration: none;
+   font-size: 18px;
+}
+
+a:hover {
+    color: yellow;  
+}
+
+.activeMenu {
+    color: yellow;
 }
 
 .white-text {
@@ -63,13 +75,14 @@ a:link {
 }
 
 .button-primary {
-    font-size: 14px;
+    font-size: 16px;
     padding: 8px 15px;
     border: 1px solid #6200EE;
     color: #6200EE;
     background-color: #eee;
     border-radius: 5px;
     cursor: pointer;
+    font-family: roboto;
 }
 
 .button-secondary {   
@@ -78,7 +91,7 @@ a:link {
 }
 
 .users-title {
-    width: 19%;
+    width: 15%;
     font-weight: bold;
     font-size: 17px;
     border-bottom: 1px  black solid;
@@ -93,3 +106,4 @@ a:link {
 .success {
     color: green;
 }
+

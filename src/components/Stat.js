@@ -24,7 +24,7 @@ const Stat = ({ stat, dispatchAddStat, dispatchSetStat, history}) => {
     const {averageAge, oldestPerson, youngestPerson, northernMostPerson ,southernMostPerson} = stat;
     return (
     <div className="flex-column ">
-      <h3 className="margin">Fetched Users Statistics</h3>
+      <h3 className="margin">Users Statistics</h3>
       <div className="flex-row margin">         
             <div className="flex-row ">
               <div className="stat-title">Average Age :</div>

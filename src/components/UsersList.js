@@ -10,7 +10,7 @@ const UserList = ({ users }) => {
         <div className="users-title">Age</div>
         <div className="users-title">Sex</div>
         <div className="users-title">City</div>
-        <div className="users-title">City</div>
+        <div className="users-title">State</div>
       </div>
     </div>;
     header = (users.length>0 ? header:'');

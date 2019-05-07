@@ -6,7 +6,7 @@ const StatItem = ({ statHistory }) => {
   const {averageAge, oldestPerson, youngestPerson, northernMostPerson, southernMostPerson} = JSON.parse(Stat)
   return (
     <div className="flex-column">
-         <div className="flex-row margin">         
+         <div className="flex-row">         
             <div className="flex-row ">
               <div className="stat-title">Average Age :</div>
               <div className="stat-info">{averageAge}</div> 
