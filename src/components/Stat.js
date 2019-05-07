@@ -2,9 +2,11 @@ import React from "react";
 import PropTypes from "prop-types";
 import { API } from "aws-amplify";
 
-const handleSave = async event => {
+const handleSave = async stat => {
+  console.log('hadle save',stat)
   try {
-    await createNote({"PickupLocation":{"Latitude":47.6174755835663,"Longitude":-122.28837066650185}});
+    //{"PickupLocation":{"Latitude":47.6174755835663,"Longitude":-122.28837066650185}}
+    await createNote(JSON.stringify(stat));
   } catch (e) {
     alert(e);
   }
@@ -25,7 +27,7 @@ const Stat = ({ stat }) => {
          <p>
     {averageAge} {oldestPerson.name.first} {youngestPerson.name.first} {northernMostPerson.name.first} {southernMostPerson.name.first}
      </p>
-     <button onClick={handleSave}>Save</button>
+     <button onClick={e=>handleSave(stat)}>Save</button>
     </div>
    )
   }else {
