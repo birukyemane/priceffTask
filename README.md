@@ -10,4 +10,4 @@
 # Technolgies
 * React/Redux 
 * Serverless API using AWS API Gateway Lamabda and DynamoDB services
-* The React app is  served globally through AWS CloudFront
+* The React app is  served globally through AWS CloudFront    
